@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import Config from "../../config/default";
 
 import NavbarLinks from "./NavbarLinks";
 
@@ -11,10 +12,10 @@ class Navbar extends Component {
       user: { name }
     } = this.props;
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark bg-primary">
+      <nav className="navbar fixed-top navbar-expand-sm navbar-dark bg-nav">
         <Link to="/" className="navbar-brand">
           <i className="fas fa-paw brand-logo"></i>
-          {" " + APP_NAME}
+          <span>{" " + Config.APP_NAME}</span>
         </Link>
         <button
           className="navbar-toggler"
@@ -43,7 +44,6 @@ Navbar.defaultProps = {
 };
 
 Navbar.propTypes = {
-  APP_NAME: PropTypes.string.isRequired,
   user: PropTypes.object.isRequired
 };
 

@@ -4,6 +4,12 @@
   "APP_AUTHOR": {
     "NAME_FIRST": "Wyatt",
     "NAME_LAST": "Phillips",
-    "EMAIL": "phillipsw1@wit.edu"
+    "EMAIL": "phillipsw1@wit.edu",
+    "WEBSITE": "https://wphillips.me/"
+  },
+  "CLIENT_NAME": "All Paws on Deck",
+  "LANDING": {
+    "TITLE": "A pet friendly appointment book",
+    "HEADER": "Please login in to access the appointment book."
   }
 }

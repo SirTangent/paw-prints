@@ -8,8 +8,11 @@ import "bootstrap/dist/js/bootstrap.min";
 import "@fortawesome/fontawesome-free/css/all.css";
 
 import Config from "./config/default";
+import {ROUTE_LANDING} from './types/sitemap';
 
 import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import Landing from "./components/layout/Landing";
 
 class App extends Component {
   constructor() {
@@ -29,7 +32,14 @@ class App extends Component {
       <Router>
         <Fragment>
           <div className="App">
-            <Navbar APP_NAME={Config.APP_NAME} user={{name: "Wyatt"}}/>
+            <Navbar user={{name: "Wyatt"}}/>
+
+            <Switch>
+              <Route exact path={ROUTE_LANDING} component={Landing}/>
+            </Switch>
+
+            <Footer />
+            <div className="bg-success test-case"></div>
           </div>
         </Fragment>
       </Router>

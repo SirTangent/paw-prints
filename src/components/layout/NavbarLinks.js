@@ -48,6 +48,7 @@ class NavbarLinks extends Component {
           </Fragment>
         );
         break;
+      case ROLE_GUEST:
       default:
         return (
           <Fragment>
@@ -72,6 +73,7 @@ class NavbarLinks extends Component {
             </ul>
           </Fragment>
         );
+
     }
   }
 }

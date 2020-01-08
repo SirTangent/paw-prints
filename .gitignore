@@ -24,3 +24,6 @@ yarn-error.log*
 
 # webstorm ide
 /.idea
+
+# project config
+config/default.json
